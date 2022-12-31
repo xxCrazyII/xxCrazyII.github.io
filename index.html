@@ -1,0 +1,74 @@
+<html>
+	<head>
+		<title>Math Game</title>
+		<link rel="stylesheet" href="core/css/main.css">
+		<link rel="stylesheet" href="core/bootstrap/css/bootstrap.min.css">
+		<link rel="stylesheet" href="core/bootstrap/css/features.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+		<script>
+		$(document).ready(function(){
+		  $("#startGame").click(function(){
+		
+				$( "#mathGame" ).slideDown( "slow", function() {
+				  // Animation complete.
+				});
+			
+		  });
+		});
+	</script>
+</head>
+	
+	<body>
+		<div class="container">
+			<div class="jumbotron">
+				<h1 class="pageTitle">Math Game</h1>
+				<p class="pageDescription">Math game for kids, version 1.0.</p>
+					<button type="button" class="btn btn-primary" id="startGame">Start Game</button>
+			</div>
+
+			<div class="container" id="mathGame">
+				<div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+					<div class="col d-flex align-items-start">
+					  <div class="icon-square text-bg-light d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+						<svg class="bi" width="1em" height="1em"><use xlink:href="#toggles2"></use></svg>
+					  </div>
+					  <div>
+						<h3 class="fs-2">Addition</h3>
+						<p>Test your addition skills.</p>
+						<a href="Addition.html" class="btn btn-primary">
+						  Primary button
+						</a>
+					  </div>
+					</div>
+					<div class="col d-flex align-items-start">
+					  <div class="icon-square text-bg-light d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+						<svg class="bi" width="1em" height="1em"><use xlink:href="#cpu-fill"></use></svg>
+					  </div>
+					  <div>
+						<h3 class="fs-2">Multipication</h3>
+						<p>Test your multipication skills.</p>
+						<a href="Multipication.html" class="btn btn-success">
+						  Success button
+						</a>
+					  </div>
+					</div>
+					<div class="col d-flex align-items-start">
+					  <div class="icon-square text-bg-light d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+						<svg class="bi" width="1em" height="1em"><use xlink:href="#tools"></use></svg>
+					  </div>
+					  <div>
+						<h3 class="fs-2">Subtration</h3>
+						<p>Test your subtration skills.</p>
+						<a href="Subtration.html" class="btn btn-danger">
+						  Danger button
+						</a>
+					  </div>
+					</div>
+				  </div>
+			</div>
+		</div>
+		
+
+	</body>
+</html>
+
